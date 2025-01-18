@@ -1,0 +1,101 @@
+:root{
+    --titles: rgb(29, 77, 114);
+}
+body{
+    margin: 0px;
+}
+h1{
+    color: white;
+}
+span.title-name{
+color: yellow;
+}
+header{
+    background-color: var(--titles);
+    display: flex;
+    flex-direction: column;
+} 
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+nav ul {
+    background-color: hsl(0, 0%, 20%);
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+nav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+/* Hasta aqui termina la parte de arriba*/
+.title{
+    margin: 0px;
+    padding: 10px 15px;
+    border-top-left-radius: 5%;
+    background-color: var(--titles);
+    color: white;
+}
+main{
+    display: flex ;
+    justify-content: space-evenly;
+}
+section.card, section.links{
+    border: 1px solid rgb(161, 157, 157);
+    margin: 10px;
+    padding: 0px 10px;
+    border-radius: 5%;
+}
+p{
+    font-size: 20px;
+}
+img.david{
+    width: 200px;
+    margin-top: 10px;
+}
+div.about-me{
+    display: flex;
+    justify-content: center;
+}
+p.introduce{
+    width: 700px;
+}
+div.country{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+img.mexico{
+    width: 250px;
+}
+ul.link-list{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+footer{
+    background-color: var(--titles);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p.foot{
+    color: white;
+    margin: 5px;
+}
+p#currentyear{
+    color: yellow;
+    margin: 5px;
+}

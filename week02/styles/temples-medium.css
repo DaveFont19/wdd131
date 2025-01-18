@@ -1,0 +1,34 @@
+@media screen and (min-width: 760px){
+    header{
+        max-height: 6rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav ul {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .large-nav{
+        display: block;
+    }
+    body{
+        width: 100%;
+    }
+    header, main, footer{
+        max-width: 100%;
+    }
+    div.main{
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        height: 281px;
+    }
+}
