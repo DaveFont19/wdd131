@@ -1,0 +1,123 @@
+:root {
+    --title: #bfd405;
+    --transpar: rgb(191, 212, 5, 0.5);
+    --white: rgb(255, 255, 255, 0.5);
+}
+
+body {
+    font-family: "Roboto", serif;
+}
+
+header {
+    background-color: #583a19;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    padding: 0.5rem;
+    color: #070070;
+    background-color: var(--title);
+    text-align: center;
+}
+
+main {
+    margin: 0;
+}
+
+.img-colima {
+    width: 100%;
+}
+
+div.first-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.weather-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+img.svgweather{
+    width: 100px;
+}
+p.emoticonWeather{
+    display: none;
+    margin: 0px 5px;
+}
+ul {
+    list-style: none;
+    padding: 5px;
+}
+
+li.left-side {
+    padding-top: 5px;
+    text-align: end;
+    font-weight: 700;
+}
+
+li.right-side {
+    padding-top: 5px;
+    text-align: start;
+}
+
+div.second-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--title);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.foot {
+    color: #070070;
+    margin: 5px;
+    text-align: center;
+}
+
+p#currentyear {
+    color: rgb(8, 5, 182);
+    margin: 5px;
+}
+
+@media (min-width: 1000px) {
+    h2{
+        background-color: var(--transpar);
+        width: 100%;
+        padding: 0.5rem 1rem;
+        display: flex;
+    }
+    .img-colima {
+        width: 100%;
+        height: 550px;
+        position: relative;
+    }
+    div.first-card, div.second-card {
+        position:absolute;
+        background-color: var(--white);
+        padding: 1rem;
+    }
+    div.first-card{
+        top: 7rem;
+        left: 2rem;
+    }
+    div.second-card{
+        bottom: 6rem;
+        right: 2rem;
+    }
+    img.svgweather{
+        display: none;
+    }
+    p.emoticonWeather{
+        display: block;
+        margin: 0px 5px;
+    }
+}

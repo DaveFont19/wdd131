@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="https://kit.fontawesome.com/63c80e7eff.js" crossorigin="anonymous"></script>
+    <script src="script/place.js" defer></script>
+    <title>Places</title>
+</head>
+
+<body>
+    <header>
+        <h1>Colima</h1>
+    </header>
+    <main>
+        <section>
+            <picture>
+                <source srcset="images/colima-medium.webp" media="(min-width: 1000px)">
+                <source srcset="images/colima-large.webp" media="(min-width: 600px)">
+                <img class="img-colima" src="images/Colima-Guide-37-copy.jpg.webp" alt="Colima" width="500"
+                    height="600">
+            </picture>
+        </section>
+        <div class="first-card">
+            <h2 class="one">Data</h2>
+            <div class="weather-card">
+                <ul>
+                    <li class="left-side">Area:</li>
+                    <li class="left-side">Population:</li>
+                    <li class="left-side">Capital:</li>
+                    <li class="left-side">Languages:</li>
+                    <li class="left-side">Currency:</li>
+                    <li class="left-side">Time Zone:</li>
+                    <li class="left-side">Calling Code:</li>
+                    <li class="left-side">Internet TLD:</li>
+                </ul>
+                <ul>
+                    <li class="right-side">5625 km²</li>
+                    <li class="right-side">731 391</li>
+                    <li class="right-side">Colima</li>
+                    <li class="right-side">Spanish</li>
+                    <li class="right-side">Mexican Pesos</li>
+                    <li class="right-side">GMT-6</li>
+                    <li class="right-side">+52</li>
+                    <li class="right-side">.mx</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="second-card">
+            <h2 class="second">weather  <p class="emoticonWeather"> &#x26C5;</p></h2>
+            <img src="images/weather.svg" alt="weather" class="svgweather">
+            <div class="weather-card">
+                <ul>
+                    <li class="left-side">Temperature:</li>
+                    <li class="left-side">Condition:</li>
+                    <li class="left-side">Wind:</li>
+                    <li class="left-side" >Wind Chill:</li>
+                </ul>
+                <ul>
+                    <li class="right-side" id="temperature">10°C</li>
+                    <li class="right-side">Partly Cloudy</li>
+                    <li class="right-side" id="windSpeed">20 km/h</li>
+                    <li class="right-side" id="windChill"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="foot"><span>&copy 2025 </span><i class="fa-solid fa-bolt"></i> David Alonso Fontes Luna <i
+                class="fa-solid fa-bolt"></i>Colima, Mexico</p>
+        <p id="currentyear"><span>Last Modified</span> <span id="year"></span></p>
+    </footer>
+</body>
+
+</html>
