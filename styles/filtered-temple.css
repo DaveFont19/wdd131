@@ -1,0 +1,169 @@
+:root{
+    --gold: rgb(192, 150, 59);
+    --goldDark: rgb(177, 145, 46);
+}
+header, main, footer{
+    max-width: 370px;
+    margin: 1rem auto;
+}
+body{
+    font-family: "Playwrite IN", serif;
+}
+/*Here starts deheader CSS*/
+header{
+    background-color: var(--gold);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+}
+h1{
+	color: rgb(77, 10, 10);
+}
+nav ul {
+    padding: 0px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+    align-content: center;
+}
+nav a {
+	display: block;
+	color: rgb(77, 10, 10);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+.mobile-nav{
+    display: block;
+}
+.large-nav{
+    display: none;
+}
+.btn{
+    background-color: rgb(212, 212, 61);
+    color: white;
+    border: none;
+}
+/*Here starts the main CSS*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+}
+h2{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 255, 129);
+    padding: 15px 5px;
+}
+figcaption{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+img{
+    margin-top: 15px;
+    max-width: 350px;
+}
+footer{
+    background-color: var(--gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p.foot{
+    color: rgb(77, 10, 10);
+    margin: 5px;
+}
+p#currentyear{
+    color: yellow;
+    margin: 5px;
+}
+
+@media screen and (min-width: 760px){
+    header{
+        max-height: 6rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav ul {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .large-nav{
+        display: block;
+    }
+    body{
+        width: 100%;
+    }
+    header, main, footer{
+        max-width: 100%;
+    }
+    div.main{
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        height: 281px;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    body{
+        width: 100%;
+    }
+    header, main, footer{
+        max-width: 100%;
+    }
+    header{
+        max-height: 6rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav ul {
+        padding: 0px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .large-nav{
+        display: block;
+    }
+    div.main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img{
+        height: 281px;
+    }
+}
+
+
