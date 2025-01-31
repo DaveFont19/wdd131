@@ -9,7 +9,6 @@ header, main, footer{
 body{
     font-family: "Playwrite IN", serif;
 }
-/*Here starts deheader CSS*/
 header{
     background-color: var(--gold);
     display: flex;
@@ -51,7 +50,6 @@ nav a:hover {
     color: white;
     border: none;
 }
-/*Here starts the main CSS*/
 main{
     display: flex;
     flex-direction: column;
