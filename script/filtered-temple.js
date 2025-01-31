@@ -1,6 +1,5 @@
-function displayHome(temples){
-  const containMain = document.querySelector(".main");
-  temples.forEach(temple => {
+function displayHome(t){
+  t.forEach(temple => {
     const figure = document.createElement("figure");
     
     const imgElement =document.createElement("img");
@@ -29,6 +28,81 @@ function displayHome(temples){
     containMain.appendChild(figure);
   });
 }
+function filterOld(){
+  const title = document.querySelector(".title");
+  title.textContent = "Old"
+  const figuresImg = document.querySelectorAll("figure")
+  figuresImg.forEach((image) =>{
+    image.remove();
+  })
+  const oldTemples = []
+  temples.forEach(temple => {
+    const dedicate = temple.dedicated.split(",");
+    const number = parseInt(dedicate[0]);
+    if (number <= 1900){
+      oldTemples.push(temple)
+    }
+  });
+  displayHome(oldTemples);
+}
+function filterNew(){
+  const title = document.querySelector(".title");
+  title.textContent = "New"
+  const figuresImg = document.querySelectorAll("figure")
+  figuresImg.forEach((image) =>{
+    image.remove();
+  })
+  const newTemples = []
+  temples.forEach(temple => {
+    const dedicate = temple.dedicated.split(",");
+    const number = parseInt(dedicate[0]);
+    if (number >= 2000){
+      newTemples.push(temple)
+    }
+  });
+  displayHome(newTemples);
+}
+function large(){
+  const title = document.querySelector(".title");
+  title.textContent = "Large"
+  const figuresImg = document.querySelectorAll("figure")
+  figuresImg.forEach((image) =>{
+    image.remove();
+  })
+  const lgrTemples = []
+  temples.forEach(temple => {
+    const number =temple.area;
+    if (number >= 90000){
+      lgrTemples.push(temple)
+    }
+  });
+  displayHome(lgrTemples);
+}
+function small(){
+  const title = document.querySelector(".title");
+  title.textContent = "Small"
+  const figuresImg = document.querySelectorAll("figure")
+  figuresImg.forEach((image) =>{
+    image.remove();
+  })
+  const smlTemples = []
+  temples.forEach(temple => {
+    const number =temple.area;
+    if (number <= 10000){
+      smlTemples.push(temple)
+    }
+  });
+  displayHome(smlTemples);
+}
+const containMain = document.querySelector(".main");
+const old = document.getElementById("old");
+const newTemple = document.getElementById("new");
+const largeTemple = document.getElementById("large");
+const smallTemple = document.getElementById("small");
+const old1 = document.getElementById("old1");
+const newTemple1 = document.getElementById("new1");
+const largeTemple1 = document.getElementById("large1");
+const smallTemple1 = document.getElementById("small1");
 const year = document.querySelector("#year");
 let oLastModif = new Date(document.lastModified);
 year.innerHTML = `<span class="highlight">${oLastModif.getDate()}/${oLastModif.getMonth() + 1}/${oLastModif.getFullYear()} ${oLastModif.getHours()}:${oLastModif.getMinutes()}:${oLastModif.getSeconds()}</span>`;
@@ -112,4 +186,15 @@ const temples = [
     }
   ];
 
-displayHome(temples)
+displayHome(temples);
+old.addEventListener("click", filterOld);
+old1.addEventListener("click", filterOld);
+
+newTemple.addEventListener("click", filterNew);
+newTemple1.addEventListener("click", filterNew);
+
+largeTemple.addEventListener("click", large);
+largeTemple1.addEventListener("click", large);
+
+smallTemple.addEventListener("click", small);
+smallTemple1.addEventListener("click", small);
