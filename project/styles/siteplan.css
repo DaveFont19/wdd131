@@ -1,0 +1,15 @@
+h2{
+    font-weight: 700;
+}
+p.color-text{
+    color: rgb(83, 33, 36);
+}
+p.color-background{
+    background-color: rgb(223, 240, 216);
+}
+p.liter{
+    font-family: "Liter", serif;;
+}
+p.roboto{
+    font-family: "Roboto", serif;;
+}
