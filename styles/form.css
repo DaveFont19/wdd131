@@ -1,0 +1,99 @@
+
+:root{
+    --background: #DFF0D8;
+    --text:rgb(0,0,255)
+}
+h1{
+    background-color: #225705;
+    color: #ffff;
+    text-align: center;
+}
+main{
+background-color: var(--background);
+padding: 15px 10px;
+}
+label, input{
+    color: var(--text);
+}
+div.product{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+div.stars{
+    margin-bottom: 10px;
+}
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+.stars > label {
+	color: #960303;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0);
+}
+.stars > label:hover {
+	color: #000;
+}
+.stars > label::before {
+	content: "\2606";
+}
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+div.date{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+div.checkbox{margin-top: 15px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+div.text{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+div.name{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+
+}
+#written{
+    height: 60px;
+}
+footer{
+    margin-top: 20px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p.foot{
+    color: rgb(77, 10, 10);
+    margin: 5px;
+}
+p#currentyear{
+    color: rgb(11, 54, 89);
+    margin: 5px;
+}
