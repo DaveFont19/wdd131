@@ -9,6 +9,7 @@ const btnDeacrese = product.querySelector('#less');
 const inputQuantity = product.querySelector('#quantity');
 const colorPropertir = document.querySelector("#color-propertie")
 const nameProduct = product.querySelector('.product-name');
+const btnAddCard = product.querySelector('#add-to-cart')
 
 thumbs.addEventListener('click', (e) => {
     if (e.target.tagName === "IMG") {
