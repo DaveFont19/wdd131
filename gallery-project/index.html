@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/_generales.css">
+    <script src="script/index.js" defer></script>
+    <title>Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-logo">Store</h1>
+            <nav class="header-menu">
+                <a href="#" class="header-link">Home</a>
+                <a href="#" class="header-link" data-action="open-card">My Card</a>
+                <a href="myAccount.html" class="header-link">My account</a>
+            </nav>
+        </header>
+        <main>
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs-link">Home</a>
+                <div class="breadcrumbs-separator">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"
+                        class="breadcrumbs-svg">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <p class="breadcrumbs-active">Nike</p>
+            </div>
+            <hero class="product" id="product">
+                <div class="product-thumbs">
+                    <img src="images/black1.png" alt="Nike Shoes" loading="lazy" class="product-nike-img">
+                    <img src="images/black2.png" alt="Nike Shoes" loading="lazy" class="product-nike-img">
+                    <img src="images/black3.png" alt="Nike Shoes" loading="lazy" class="product-nike-img">
+                    <img src="images/black4.png" alt="Nike Shoes" loading="lazy" class="product-nike-img">
+                    <img src="images/black5.png" alt="Nike Shoes" loading="lazy" class="product-nike-img">
+                </div>
+                <div class="product-container-img">
+                    <img src="images/black1.png" alt="Nike Shoes" loading="lazy" class="product-image">
+                </div>
+                <hero class="product-container-info">
+                    <h1 class="product-name">Dunk Low Retro BLACK</h1>
+                    <p class="product-description">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="product-properties">
+                        <p class="product-proper">Price</p>
+                        <p class="price-mount">$500.00</p>
+                    </div>
+                    <div class="product-container-proper" id="color-propertie">
+                        <p class="product-proper-color">Color</p>
+                        <div class="product-container-radios">
+                            <label for="black">
+                                <input type="radio" class="product-radio-input" name="color" id="black" value="black"
+                                    checked />
+                                <p class="product-radio-text product-radio-text--color product-radio-text--black">
+                                    Black
+                                </p>
+                            </label>
+                            <label for="red">
+                                <input type="radio" class="product-radio-input" name="color" id="red" value="red" />
+                                <p class="product-radio-text product-radio-text--color product-radio-text--red">
+                                    Red
+                                </p>
+                            </label>
+                            <label for="green">
+                                <input type="radio" class="product-radio-input" name="color" id="green" value="green" />
+                                <p class="product-radio-text product-radio-text--color product-radio-text--green">
+                                    Green
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product-container-proper" id="propertie-size">
+                        <p class="product-proper">Size</p>
+                        <div class="product-container-radios">
+                            <label for="6">
+                                <input type="radio" class="product-radio-input" name="size" id="6" value="6"
+                                    checked />
+                                <p class="product-radio-text">6</p>
+                            </label>
+                            <label for="6,5">
+                                <input type="radio" class="product-radio-input" name="size" id="6,5" value="6,5" />
+                                <p class="product-radio-text">6,5</p>
+                            </label>
+                            <label for="7">
+                                <input type="radio" class="product-radio-input" name="size" id="7" value="7" />
+                                <p class="product-radio-text">7</p>
+                            </label>
+                            <label for="7,5">
+                                <input type="radio" class="product-radio-input" name="size" id="7,5" value="7,5" />
+                                <p class="product-radio-text">7,5</p>
+                            </label>
+                            <label for="8">
+                                <input type="radio" class="product-radio-input" name="size" id="8" value="8" />
+                                <p class="product-radio-text">8</p>
+                            </label>
+                            <label for="8,5">
+                                <input type="radio" class="product-radio-input" name="size" id="8,5" value="8,5" />
+                                <p class="product-radio-text">8,5</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product-container-proper">
+                        <p class="product-proper">Quantity</p>
+                        <button class="product-btn-count" id="less">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                        <input type="text" id="quantity" value="1" class="product-count" />
+                        <button class="product-btn-count" id="more">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="submit" class="product-btn-cart" id="add-to-cart">
+                        Add to Cart
+                    </button>
+                </hero>
+    </div>
+    </main>
+    </div>
+    <div class="notification" id="notification">
+        <p class="notification-title">Added to CArd</p>
+        <img src="./img/thumbs/1.jpg" alt="" class="notification-thumb" />
+        <a href="#" class="notification-link" data-action="open-card">See Card</a>
+    </div>
+    <div class="card" id="card">
+        <div class="card-overlay">
+            <div class="card-container">
+                <div class="card-header">
+                    <h4 class="card-title">Card</h4>
+                    <button class="card-btn-close" data-action="close-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <p class="card-prompt-no-products">No products in your Card.</p>
+                    <!-- <div class="card-product">
+                        <div class="card-product-info">
+                            <img src="./img/tennis/1.jpg" alt="" class="card-thumb" />
+                            <div>
+                                <p class="card-product-name">
+                                    <span class="card-product-qua">1 x </span>Lorem Ipsum Dolot Asimmet
+                                </p>
+                                <p class="card-product-proper">
+                                    Tamaño:<span>2,5</span> Color:<span>Rojo</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-product-container-price">
+                            <button class="card-btn-delete-item" data-action="delete-item-card">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"
+                                    />
+                                </svg>
+                            </button>
+                            <p class="card-product-price">$500.00</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="card-footer">
+                    <div class="card-container-total">
+                        <div>
+                            <p class="card-total">Total:</p>
+                            <p class="card-label">$0.00</p>
+                        </div>
+                        <button class="card-btn-buy" id="card-btn-buy">Buy</button>
+                    </div>
+                    <div class="card-container-btn-back" data-action="close-card">
+                        <button class="card-btn-back">Keep Buying</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

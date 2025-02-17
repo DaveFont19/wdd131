@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text: rgb(83, 33, 36);
+    --background-color: rgb(223, 240, 216);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 84vh;
+    background-color: var(--background-color);
+}
+/* ----- -----  HEADER ----- ----- */
+.header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-link {
+    color: var(--text);
+}
+
+.header .header-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: var(--text);
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+p, h2 {
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    width:100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0);
+}
+input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+button{
+    width: 100%;
+    padding:12;
+    background-color: var(--background-color);
+    color: var(--text);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: rgb(79, 119, 62);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.register-form{
+    display:none;
+}
+.register-form-active{
+    position: fixed;
+    width: 50vw;
+    height: 60vh;
+    top: 25%;
+    left: 25%;
+    background: rgba(68, 68, 68, 0.7);
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/myAccount.css">
+    <script src="script/myAccount.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-logo">Store</h1>
+        <nav class="header-menu">
+            <a href="index.html" class="header-link">Home</a>
+            <a href="#" class="header-link" data-action="open-card">My Card</a>
+            <a href="myAccount.html" class="header-link">My account</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" id="login-name" required>
+                <input type="password" placeholder="password" required id="login-pass">
+                <button id="btnLogin" type="submit">Login</button>
+                <p>Don't you have an Account? <a href="#" id="register-now">Register Now</a></p>
+            </form>
+        </div>
+        <div class="register-form" id="register-form">
+            <form id="register">
+                <h2>Register</h2>
+                <input type="text" placeholder="Username" id="register-name" required>
+                <input type="email" placeholder="Email" id="register-email" required>
+                <input type="password" placeholder="Password" id="register-pass" required>
+                <button id="btnRegister" type="submit">Register</button>
+                <a href="#" id="login-now">Login</a>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
